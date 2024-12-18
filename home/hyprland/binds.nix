@@ -45,7 +45,7 @@ in {
 
         # open application launcher
         # "$mod, R, exec, pkill fuzzel || run-as-service fuzzel"
-        "$mod, R, exec, pkill anyrun || run-as-service anyrun"
+        "$mod, R, exec, pkill anyrun || anyrun"
 
         # utility
         # terminal

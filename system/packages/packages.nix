@@ -41,8 +41,6 @@
     steam-tui
  
     kitty
-    wofi
-    firefox
     brave
     vscode
     brightnessctl

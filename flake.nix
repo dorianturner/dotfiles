@@ -31,11 +31,8 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.verbose = true;
 
-            # Replace dorian with your own username
             home-manager.users.dorian = import ./home/default.nix;
-
             home-manager.extraSpecialArgs = {inherit inputs; };
           }
 
