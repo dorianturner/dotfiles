@@ -4,5 +4,6 @@
     ./audio.nix
     ./configuration.nix
     ./packages/default.nix
+    ./nix/default.nix
   ];
 }
