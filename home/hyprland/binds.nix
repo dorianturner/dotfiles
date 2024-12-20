@@ -49,7 +49,7 @@ in {
 
         # utility
         # terminal
-        "$mod, Q, exec, kitty"
+        "$mod, Q, exec, kitty" # alt kitty if not working
         "$mod SHIFT, Q, exec, [floating] run-as-service foot"
         # logout menu
         "$mod, Escape, exec, wlogout -p layer-shell"

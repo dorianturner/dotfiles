@@ -11,13 +11,7 @@
     wget
     curl
     
-    # Programming Language Support
-    libgcc
-    
     # Kotlin
-    jdk
-    kotlin
-    jetbrains.jdk
     jetbrains.idea-community
 
     nerdfonts
@@ -50,13 +44,5 @@
     
     p7zip
     xdg-desktop-portal-hyprland 
-
-    # breaks out of the pkgs scope, enters another ghcWithPackages
-    # and defines it as scope p, then with scope p, installs list of packages
-    (haskellPackages.ghcWithPackages (p:
-        with p; [
-            cabal-install
-            GLUT
-        ])) 
   ];
 }

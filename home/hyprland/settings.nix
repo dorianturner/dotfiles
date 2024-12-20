@@ -67,7 +67,7 @@
       kb_layout = "gb";
 
       # focus change on cursor move
-      sensitivity = -0.5;
+      sensitivity = -0.2;
       follow_mouse = 1;
       accel_profile = "flat";
       touchpad.scroll_factor = 0.1;

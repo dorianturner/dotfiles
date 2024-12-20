@@ -2,7 +2,8 @@
   imports = [
     ./anyrun.nix
     ./firefox.nix
-    ./discord
+    ./discord/default.nix
+    ./lutris.nix
     # ./foot.nix
   ];
 }
