@@ -42,13 +42,11 @@
  
     kitty
     brave
-    vscode
     brightnessctl
     pulseaudio
     alsa-utils
     pavucontrol
     yazi
-    vesktop 
     
     p7zip
     xdg-desktop-portal-hyprland 
