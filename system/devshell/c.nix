@@ -5,11 +5,9 @@ pkgs.mkShell {
 
  	buildInputs = with pkgs; [
 		gcc           # C compiler
-		make          # Build system
+		gnumake       # Build system
 		gdb           # Debugger
 		valgrind      # Memory checker
-		perf          # Profiling
-		pkg-config    # Dependency manager
 	];
 
 	shellHook = ''
