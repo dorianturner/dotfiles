@@ -5,6 +5,13 @@
 		hyprpaper
 		hyprpicker
 		hyprlock
+		hyprpolkitagent
+
+		copyq
+		dunst
+		pipewire
+		wireplumber
+		
 	];
 
 }
