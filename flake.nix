@@ -21,6 +21,7 @@
 				pkgs = import nixpkgs { inherit system; };
 			in {
 				devShells.c = import ./system/devshell/c.nix { inherit pkgs; };
+				devShells.haskell = import ./system/devshell/haskell.nix { inherit pkgs; };
 			}
 		) // {
 			nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
