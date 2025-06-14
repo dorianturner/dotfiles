@@ -5,5 +5,6 @@
 		./substituters.nix
 		./hyprland.nix
 		./hyprlandconf.nix
+		./utilities
 	];
 }
