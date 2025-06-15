@@ -1,5 +1,6 @@
 {
 	imports = [
+		./bluetooth.nix
 		./proxy.nix
 		./firewall.nix
 		./ssh.nix

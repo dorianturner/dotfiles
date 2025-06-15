@@ -8,6 +8,7 @@
 		tree
 		wget
 		wofi
+		sutils
 	];
 
 }
