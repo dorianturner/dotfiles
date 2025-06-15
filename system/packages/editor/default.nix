@@ -1,6 +1,6 @@
 {
 	imports = [
 		./editors.nix
-		./neovimconf.nix
+		./neovim.nix
 	];
 }

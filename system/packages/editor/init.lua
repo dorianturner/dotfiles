@@ -17,8 +17,8 @@ vim.g.neovide_hide_mouse_when_typing = true
 
 -- Better editing
 vim.opt.mouse = "a"              -- Enable mouse support
-vim.opt.tabstop = 4              -- Tabs are 4 spaces
-vim.opt.shiftwidth = 4           -- Auto-indent width
+vim.opt.tabstop = 2              -- Tabs are 4 spaces
+vim.opt.shiftwidth = 2           -- Auto-indent width
 vim.opt.expandtab = true         -- Convert tabs to spaces
 vim.opt.smartindent = true       -- Smarter auto-indentation
 vim.opt.wrap = false             -- Disable word wrap
