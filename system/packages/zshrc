@@ -1,0 +1,29 @@
+# Enable command completion system
+autoload -Uz compinit
+compinit
+
+# Enable prompt with Git info using built-in vcs_info
+autoload -Uz vcs_info
+precmd() { vcs_info }
+setopt prompt_subst
+
+# Customize prompt to show user, host, current directory, and git branch if any
+PS1='%n@%m:%~${vcs_info_msg_0_} %# '
+
+# Configure vcs_info to show git branch in prompt
+zstyle ':vcs_info:git:*' formats ' (%b)'
+
+# Enable command history options
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+setopt INC_APPEND_HISTORY
+
+# Enable command correction
+setopt correct
+
+# Enable auto-suggestions via builtin widget (Zsh 5.4+)
+if zmodload zsh/complist &>/dev/null; then
+  bindkey '^I' expand-or-complete
+fi
+

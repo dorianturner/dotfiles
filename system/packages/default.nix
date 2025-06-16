@@ -5,5 +5,6 @@
 		./fonts.nix
 		./utils.nix
 		./quickshell.nix
+		./zsh.nix
 	];
 }

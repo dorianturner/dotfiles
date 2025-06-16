@@ -8,11 +8,14 @@
 
 		quickshell.url = "git+https://git.outfoxxed.me/outfoxxed/quickshell";
 		quickshell.inputs.nixpkgs.follows = "nixpkgs";
+		
+		lanzaboote.url = "github:nix-community/lanzaboote/v0.4.2";
+		lanzaboote.inputs.nixpkgs.follows = "nixpkgs";
 
 		utils.url = "github:numtide/flake-utils";
 	};
 
-	outputs = inputs@{ self, nixpkgs, utils, hjem, ... }:
+	outputs = inputs@{ self, nixpkgs, utils, hjem, lanzaboote, ... }:
 		let
 			system = "x86_64-linux";
 		in
@@ -27,7 +30,7 @@
 			nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
 				inherit system;
 				specialArgs = { inherit inputs system hjem; };
-				modules = [ hjem.nixosModules.default ./system ];
+				modules = [ hjem.nixosModules.default ./system lanzaboote.nixosModules.lanzaboote];
 			};
 		};
 }
