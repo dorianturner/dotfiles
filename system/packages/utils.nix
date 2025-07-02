@@ -12,7 +12,6 @@
 		sutils
 		gnumake
 		cargo
-		zsh
 		sbctl # troubleshooting for secure boot
 	];
 

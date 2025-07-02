@@ -11,6 +11,7 @@
 		dunst
 		pipewire
 		wireplumber
+		grimblast
 		
 	];
 

@@ -4,10 +4,14 @@ pkgs.mkShell {
 	name = "c-dev-shell";
 
  	buildInputs = with pkgs; [
-		gcc           # C compiler
-		gnumake       # Build system
-		gdb           # Debugger
-		valgrind      # Memory checker
+		gcc           
+		gnumake      
+		gdb         
+		valgrind
+
+		SDL2
+		SDL2_image
+		SDL2_mixer
 	];
 
 	shellHook = ''

@@ -12,5 +12,5 @@ Should now be able to rebuild with
 
 
 Now according to the [quickstart](https://github.com/nix-community/lanzaboote/blob/master/docs/QUICK_START.md) for lanzaboote,
-you should enable secure boot in your BIOS and then enroll microsoft keys ```sudo sbctl enroll-keys --microsoft``` and reboot.
+you should enable secure boot in your BIOS, then reset to setup mode, and then enroll microsoft keys ```sudo sbctl enroll-keys --microsoft``` and reboot.
 
