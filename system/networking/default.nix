@@ -5,6 +5,7 @@
 		./firewall.nix
 		./ssh.nix
 		./networkmanager.nix
+		./nettools.nix
 	];
 	
 	networking.hostName = "nixos"; 

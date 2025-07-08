@@ -17,4 +17,4 @@ vim.opt.cursorline = true
 vim.opt.termguicolors = true
 vim.cmd("syntax on")
 vim.cmd("filetype plugin indent on")
-vim.cmd("colorscheme torte")
+vim.cmd("colorscheme dune")
