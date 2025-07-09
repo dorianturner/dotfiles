@@ -19,14 +19,7 @@
 		let
 			system = "x86_64-linux";
 		in
-		utils.lib.eachDefaultSystem (system:
-			let
-				pkgs = import nixpkgs { inherit system; };
-			in {
-				devShells.c = import ./system/devshell/c.nix { inherit pkgs; };
-				devShells.haskell = import ./system/devshell/haskell.nix { inherit pkgs; };
-			}
-		) // {
+		{
 			nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
 				inherit system;
 				specialArgs = { inherit inputs system hjem; };

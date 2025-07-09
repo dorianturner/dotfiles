@@ -13,6 +13,8 @@
 		gnumake
 		cargo
 		sbctl # troubleshooting for secure boot
+
+		android-studio
 	];
 
 }

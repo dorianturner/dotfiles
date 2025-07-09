@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 WALLPAPER_DIR="/etc/nixos/system/wayland/wallpaper/"
-MONITOR="eDP-1"
+MONITOR="eDP-2"
 TMP_CONFIG="/tmp/hyprpaper.conf"
 
 # Pick a random wallpaper
