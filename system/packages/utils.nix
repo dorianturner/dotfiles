@@ -15,6 +15,9 @@
 		sbctl # troubleshooting for secure boot
 
 		android-studio
+		vlc
+		gparted
+		samba
 	];
 
 }
